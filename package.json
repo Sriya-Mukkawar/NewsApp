@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "npx expo start -c",
+    "backend": "cd NewsAppBackend && concurrently \"node server.js\" \"python3 summarizer.py\"",
+    "dev": "concurrently \"npm run start\" \"npm run backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
